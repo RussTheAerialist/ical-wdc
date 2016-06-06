@@ -1,0 +1,32 @@
+{
+  "name": "ics-wdc",
+  "version": "1.0.0",
+  "description": "A Tableau Web Data Connector for connecting to ICS streams",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test",
+    "build": "browserify index.js"
+  },
+  "keywords": [],
+  "author": "Russell Hay",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^13.0.1",
+    "browserify-shim": "^3.8.12",
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-template": "^4.0.0",
+    "ical.js": "^1.2.1",
+    "jquery": "^2.2.4",
+    "mocha": "^2.5.3",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "tableau": "global:tableau"
+  }
+}
