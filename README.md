@@ -4,9 +4,11 @@ A web data connector to use calendars as a datasource in Tableau
 
 ## tl;dr
 
+```
 > npm install && npm run proxy
 > point wdc at http://localhost:8080
 > prefix ics feed url with http://localhost:8080/ to proxy through xcors-anywhere
+```
 
 ## Security Warning
 
